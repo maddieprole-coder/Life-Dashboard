@@ -1,0 +1,5 @@
+output/
+audio_assets/
+__pycache__/
+*.pyc
+*TEMP_MPY*

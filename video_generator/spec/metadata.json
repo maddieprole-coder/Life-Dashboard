@@ -1,0 +1,20 @@
+{
+  "video_project": {
+    "title": "Safe Manual Handling for Cleaners",
+    "description": "3-minute educational animation for professional cleaners",
+    "duration_seconds": 180,
+    "fps": 24,
+    "total_frames": 4320,
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "aspect_ratio": "16:9",
+    "format": "mp4",
+    "codec_video": "h264",
+    "codec_audio": "aac",
+    "bitrate_video": "8000k",
+    "bitrate_audio": "128k",
+    "sample_rate_audio": 48000
+  }
+}

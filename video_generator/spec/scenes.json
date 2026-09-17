@@ -1,0 +1,808 @@
+[
+  {
+    "scene_id": 1,
+    "scene_name": "Opening Title",
+    "start_frame": 0,
+    "end_frame": 480,
+    "duration_seconds": 20,
+    "background_color": "#FFFFFF",
+    "background_gradient": true,
+    "gradient_bottom_color": "#E0E8FF",
+    "elements": [
+      {
+        "type": "fade_in",
+        "duration_frames": 60,
+        "target_opacity": 1.0
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 600},
+        "animation": "wave_friendly",
+        "duration_frames": 480,
+        "opacity": 1.0
+      },
+      {
+        "type": "floating_icons",
+        "icons": ["hard_hat", "safety_vest", "goggles", "gloves", "boots", "warning_triangle", "first_aid_kit"],
+        "animation": "float_in_circle",
+        "duration_frames": 300,
+        "start_frame": 100
+      },
+      {
+        "type": "text_title",
+        "text": "SAFE MANUAL HANDLING FOR CLEANERS",
+        "position": {"x": 960, "y": 200},
+        "font": "Arial Bold",
+        "font_size": 72,
+        "color": "#000000",
+        "animation": "slide_up",
+        "duration_frames": 200,
+        "start_frame": 250
+      },
+      {
+        "type": "text_subtitle",
+        "text": "Protect Your Back, Prevent Injury",
+        "position": {"x": 960, "y": 950},
+        "font": "Arial Bold",
+        "font_size": 48,
+        "color": "#333333",
+        "animation": "fade_in",
+        "duration_frames": 200,
+        "start_frame": 350
+      }
+    ],
+    "voiceover": {
+      "text": "Welcome to Safe Manual Handling Training for Cleaning Professionals. Whether you clean offices, buildings, or facilities, knowing how to lift and carry safely is essential to protecting your health and wellbeing. In this video, we will learn six critical steps to prevent back injuries and strain while performing your cleaning duties.",
+      "start_frame": 0,
+      "duration_frames": 480,
+      "audio_file": "voiceover_scene_1.mp3"
+    },
+    "background_music": {
+      "type": "inspiring_theme",
+      "volume": 0.40,
+      "start_frame": 0,
+      "end_frame": 480,
+      "fade_in_frames": 60
+    }
+  },
+
+  {
+    "scene_id": 2,
+    "scene_name": "Step 1 - Assess the Load",
+    "start_frame": 480,
+    "end_frame": 1080,
+    "duration_seconds": 25,
+    "background_color": "#F5F5F5",
+    "background_gradient": true,
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 1: ASSESS THE LOAD",
+        "position": {"x": 960, "y": 100},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 480
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 500},
+        "animation": "assess_load",
+        "duration_frames": 600,
+        "hand_on_chin": true,
+        "eyes_tracking": "bucket"
+      },
+      {
+        "type": "object",
+        "name": "mop_bucket",
+        "position": {"x": 500, "y": 600},
+        "animation": "rotate_slow",
+        "duration_frames": 400,
+        "start_frame": 520,
+        "rotation_speed": "1_rotation_per_8_seconds"
+      },
+      {
+        "type": "icon",
+        "name": "weight_symbol",
+        "position": {"x": 500, "y": 400},
+        "animation": "fade_in_pulse",
+        "duration_frames": 200,
+        "start_frame": 620,
+        "color": "#FF4444"
+      },
+      {
+        "type": "icon",
+        "name": "warning_caution",
+        "position": {"x": 600, "y": 450},
+        "animation": "fade_in_pulse",
+        "duration_frames": 200,
+        "start_frame": 700
+      },
+      {
+        "type": "text_callout",
+        "text": "Is the bucket too heavy when full?",
+        "position": {"x": 960, "y": 850},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "background_color": "rgba(255,255,255,0.8)",
+        "background_radius": 12,
+        "animation": "slide_in_from_bottom",
+        "duration_frames": 150,
+        "start_frame": 720
+      },
+      {
+        "type": "text_callout",
+        "text": "Is the mop water stable or sloshing?",
+        "position": {"x": 960, "y": 920},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "slide_in_from_bottom",
+        "duration_frames": 150,
+        "start_frame": 770
+      },
+      {
+        "type": "text_callout",
+        "text": "Do you need help from a colleague?",
+        "position": {"x": 960, "y": 990},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "slide_in_from_bottom",
+        "duration_frames": 150,
+        "start_frame": 820
+      }
+    ],
+    "voiceover": {
+      "text": "Step One: Before you lift anything, always assess the load. Ask yourself: Is this bucket too heavy for me to carry alone? Is it filled with water that might spill? Are there cleaning supplies that might be unstable? Never assume you can lift something alone. Always check the weight and contents. If you are unsure, ask for help from a colleague. It is better to be safe than sorry.",
+      "start_frame": 480,
+      "duration_frames": 600,
+      "audio_file": "voiceover_scene_2.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "whoosh",
+        "frame": 620,
+        "duration_frames": 20,
+        "volume": 0.6
+      },
+      {
+        "type": "whoosh",
+        "frame": 700,
+        "duration_frames": 20,
+        "volume": 0.6
+      }
+    ],
+    "background_music": {
+      "type": "contemplative_theme",
+      "volume": 0.40,
+      "start_frame": 480,
+      "end_frame": 1080
+    }
+  },
+
+  {
+    "scene_id": 3,
+    "scene_name": "Step 2 - Position Your Feet",
+    "start_frame": 1080,
+    "end_frame": 1680,
+    "duration_seconds": 25,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 2: POSITION YOUR FEET",
+        "position": {"x": 960, "y": 100},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 1080
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 500},
+        "animation": "position_feet",
+        "duration_frames": 600,
+        "look_down": true
+      },
+      {
+        "type": "graphic_element",
+        "name": "footprints_outline",
+        "position": {"x": 960, "y": 800},
+        "color": "#00AA00",
+        "animation": "fade_in",
+        "duration_frames": 200,
+        "start_frame": 1120,
+        "opacity": 0.7
+      },
+      {
+        "type": "graphic_element",
+        "name": "distance_markers",
+        "position": {"x": 960, "y": 800},
+        "animation": "show_measurements",
+        "duration_frames": 200,
+        "start_frame": 1200,
+        "label_text": "shoulder-width",
+        "color": "#00AA00"
+      },
+      {
+        "type": "icon",
+        "name": "checkmark_green",
+        "position": {"x": 960, "y": 850},
+        "animation": "appear_with_scale",
+        "duration_frames": 100,
+        "start_frame": 1500,
+        "size": 80,
+        "color": "#00AA00"
+      },
+      {
+        "type": "text_callout",
+        "text": "Feet shoulder-width apart",
+        "position": {"x": 960, "y": 900},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "fade_in",
+        "duration_frames": 200,
+        "start_frame": 1250
+      },
+      {
+        "type": "text_callout",
+        "text": "One foot slightly forward",
+        "position": {"x": 960, "y": 960},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "fade_in",
+        "duration_frames": 200,
+        "start_frame": 1300
+      }
+    ],
+    "voiceover": {
+      "text": "Step Two: Position your feet correctly before lifting. Stand with your feet about shoulder-width apart. Place one foot slightly forward. This gives you a stable, balanced stance. Good foot position is the foundation for safe lifting. Your feet should be firmly on the floor, and you should feel balanced and ready to move. Never rush this step.",
+      "start_frame": 1080,
+      "duration_frames": 600,
+      "audio_file": "voiceover_scene_3.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "click",
+        "frame": 1500,
+        "duration_frames": 10,
+        "volume": 0.7
+      },
+      {
+        "type": "positive_ding",
+        "frame": 1520,
+        "duration_frames": 30,
+        "volume": 0.8
+      }
+    ],
+    "background_music": {
+      "type": "calm_theme",
+      "volume": 0.40,
+      "start_frame": 1080,
+      "end_frame": 1680
+    }
+  },
+
+  {
+    "scene_id": 4,
+    "scene_name": "Step 3 - Bend Your Knees",
+    "start_frame": 1680,
+    "end_frame": 2400,
+    "duration_seconds": 30,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 3: BEND YOUR KNEES",
+        "position": {"x": 960, "y": 80},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 1680
+      },
+      {
+        "type": "text_title",
+        "text": "NOT YOUR BACK!",
+        "position": {"x": 960, "y": 160},
+        "font": "Arial Bold",
+        "font_size": 56,
+        "color": "#FF4444",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 1750
+      },
+      {
+        "type": "split_screen",
+        "left_side": {
+          "label": "CORRECT",
+          "position": {"x": 480, "y": 500},
+          "animation": "character_bend_correct",
+          "glow_color": "#00AA00",
+          "glow_intensity": 0.8
+        },
+        "right_side": {
+          "label": "WRONG",
+          "position": {"x": 1440, "y": 500},
+          "animation": "character_bend_wrong",
+          "glow_color": "#FF4444",
+          "glow_intensity": 0.8
+        },
+        "duration_frames": 720,
+        "start_frame": 1800
+      },
+      {
+        "type": "character_overlay",
+        "name": "spine_line_correct",
+        "position": {"x": 480, "y": 500},
+        "animation": "draw_straight_spine",
+        "color": "#00AA00",
+        "thickness": 4,
+        "duration_frames": 300,
+        "start_frame": 1850
+      },
+      {
+        "type": "character_overlay",
+        "name": "spine_line_wrong",
+        "position": {"x": 1440, "y": 500},
+        "animation": "draw_curved_spine",
+        "color": "#FF4444",
+        "thickness": 4,
+        "duration_frames": 300,
+        "start_frame": 1850
+      },
+      {
+        "type": "icon",
+        "name": "checkmark_correct",
+        "position": {"x": 480, "y": 750},
+        "animation": "scale_in",
+        "color": "#00AA00",
+        "size": 100,
+        "duration_frames": 100,
+        "start_frame": 1900
+      },
+      {
+        "type": "icon",
+        "name": "x_mark_wrong",
+        "position": {"x": 1440, "y": 750},
+        "animation": "scale_in",
+        "color": "#FF4444",
+        "size": 100,
+        "duration_frames": 100,
+        "start_frame": 1900
+      }
+    ],
+    "voiceover": {
+      "text": "Step Three: This is very important. Bend your knees, NOT your back! Keep your spine straight and aligned. Your knees and hips should do the work of lowering your body to the level of the bucket. Your back is not designed to bend when lifting heavy loads. A straight back protects your spine from serious injury. Always remember: bend your knees and keep your back straight.",
+      "start_frame": 1680,
+      "duration_frames": 720,
+      "audio_file": "voiceover_scene_4.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "warning_buzzer",
+        "frame": 1950,
+        "duration_frames": 40,
+        "volume": 0.8
+      },
+      {
+        "type": "positive_ding",
+        "frame": 2000,
+        "duration_frames": 30,
+        "volume": 0.8
+      }
+    ],
+    "background_music": {
+      "type": "alert_theme",
+      "volume": 0.0,
+      "start_frame": 1680,
+      "end_frame": 2400,
+      "note": "minimal music during comparison"
+    }
+  },
+
+  {
+    "scene_id": 5,
+    "scene_name": "Step 4 - Grip and Lift",
+    "start_frame": 2400,
+    "end_frame": 3120,
+    "duration_seconds": 30,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 4: GRIP AND LIFT",
+        "position": {"x": 960, "y": 100},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 2400
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 600},
+        "animation": "grip_and_lift",
+        "duration_frames": 720,
+        "slow_motion": true,
+        "slow_motion_factor": 1.0,
+        "highlight_legs": true,
+        "leg_glow_color": "#FFD700",
+        "leg_glow_intensity": 0.6
+      },
+      {
+        "type": "object",
+        "name": "mop_bucket",
+        "position": {"x": 960, "y": 700},
+        "animation": "lift_smooth",
+        "duration_frames": 720,
+        "end_position": {"x": 960, "y": 450},
+        "arrow_indicators": true,
+        "arrow_color": "#00AA00"
+      },
+      {
+        "type": "visual_effect",
+        "name": "success_sparkles",
+        "position": {"x": 960, "y": 450},
+        "animation": "sparkle_burst",
+        "duration_frames": 100,
+        "start_frame": 3050,
+        "particle_count": 12,
+        "color": "#FFD700"
+      },
+      {
+        "type": "text_callout",
+        "text": "Grip firmly on both handles",
+        "position": {"x": 960, "y": 850},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "fade_in",
+        "duration_frames": 200,
+        "start_frame": 2500
+      }
+    ],
+    "voiceover": {
+      "text": "Step Four: Grip and Lift. Get a firm grip on the bucket with both hands. Hold the bucket close to your body. This reduces strain on your back. Now, using the strength in your legs, not your back, push through your heels and stand up smoothly. Keep the movement controlled and smooth. Never jerk the bucket or make sudden movements. Your legs are much stronger than your back and are designed for this type of work.",
+      "start_frame": 2400,
+      "duration_frames": 720,
+      "audio_file": "voiceover_scene_5.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "muscle_activation",
+        "frame": 2450,
+        "duration_frames": 50,
+        "volume": 0.5
+      },
+      {
+        "type": "lifting_whoosh",
+        "frame": 2500,
+        "duration_frames": 400,
+        "volume": 0.7
+      }
+    ],
+    "background_music": {
+      "type": "uplifting_theme",
+      "volume": 0.40,
+      "start_frame": 2400,
+      "end_frame": 3120
+    }
+  },
+
+  {
+    "scene_id": 6,
+    "scene_name": "Step 5 - Carry Safely",
+    "start_frame": 3120,
+    "end_frame": 3720,
+    "duration_seconds": 25,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 5: CARRY SAFELY",
+        "position": {"x": 960, "y": 100},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 3120
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 500},
+        "animation": "walk_with_bucket",
+        "duration_frames": 600,
+        "start_position": {"x": 400, "y": 500},
+        "end_position": {"x": 1520, "y": 500},
+        "bucket_held": true,
+        "bucket_position_relative": {"x": 0, "y": -60}
+      },
+      {
+        "type": "graphic_element",
+        "name": "walking_path",
+        "animation": "show_dotted_path",
+        "color": "#00AA00",
+        "opacity": 0.5,
+        "start_frame": 3150,
+        "duration_frames": 200
+      },
+      {
+        "type": "graphic_element",
+        "name": "safe_zone_highlight",
+        "animation": "highlight_safe_zone",
+        "color": "#00AA00",
+        "opacity": 0.3,
+        "start_frame": 3180,
+        "duration_frames": 500
+      },
+      {
+        "type": "animation_event",
+        "name": "show_wrong_twist",
+        "frame": 3350,
+        "animation": "character_attempt_twist_then_stop",
+        "duration_frames": 150,
+        "wrong_indicator": true,
+        "wrong_color": "#FF4444"
+      },
+      {
+        "type": "animation_event",
+        "name": "show_wrong_reach",
+        "frame": 3500,
+        "animation": "character_attempt_reach_then_correct",
+        "duration_frames": 150,
+        "correction_indicator": true,
+        "correction_color": "#00AA00"
+      },
+      {
+        "type": "icon",
+        "name": "checkmark_arrival",
+        "position": {"x": 1520, "y": 450},
+        "animation": "scale_in",
+        "color": "#00AA00",
+        "size": 80,
+        "duration_frames": 100,
+        "start_frame": 3650
+      }
+    ],
+    "voiceover": {
+      "text": "Step Five: Carrying Safely. Once you are holding the bucket, keep it close to your body at waist height. Maintain an upright posture and avoid twisting your spine. Your feet should move first, then your body follows. Never twist your torso while holding a heavy bucket. Walk carefully through your cleaning area, watch for obstacles and hazards in your path, and stay focused on your destination. Safe carrying prevents accidents and injuries.",
+      "start_frame": 3120,
+      "duration_frames": 600,
+      "audio_file": "voiceover_scene_6.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "footsteps",
+        "frame": 3160,
+        "duration_frames": 500,
+        "volume": 0.5,
+        "rhythm": "walking_pace"
+      },
+      {
+        "type": "alert_sound",
+        "frame": 3350,
+        "duration_frames": 30,
+        "volume": 0.6
+      },
+      {
+        "type": "success_tone",
+        "frame": 3500,
+        "duration_frames": 20,
+        "volume": 0.6
+      }
+    ],
+    "background_music": {
+      "type": "calm_focused_theme",
+      "volume": 0.40,
+      "start_frame": 3120,
+      "end_frame": 3720
+    }
+  },
+
+  {
+    "scene_id": 7,
+    "scene_name": "Step 6 - Set Down Properly",
+    "start_frame": 3720,
+    "end_frame": 4200,
+    "duration_seconds": 20,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "text_title",
+        "text": "STEP 6: SET DOWN PROPERLY",
+        "position": {"x": 960, "y": 100},
+        "font": "Arial Bold",
+        "font_size": 64,
+        "color": "#000000",
+        "animation": "fade_in",
+        "duration_frames": 100,
+        "start_frame": 3720
+      },
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 500},
+        "animation": "bend_and_set_down",
+        "duration_frames": 480,
+        "slow_motion": true,
+        "slow_motion_factor": 1.0,
+        "end_pose": "standing_upright"
+      },
+      {
+        "type": "object",
+        "name": "mop_bucket",
+        "position": {"x": 960, "y": 450},
+        "animation": "lower_gently",
+        "duration_frames": 480,
+        "end_position": {"x": 960, "y": 700},
+        "gentle_placement": true
+      },
+      {
+        "type": "animation_event",
+        "name": "completion_checkmark",
+        "frame": 4050,
+        "animation": "show_checkmark_over_bucket",
+        "color": "#00AA00",
+        "size": 120
+      },
+      {
+        "type": "animation_event",
+        "name": "thumbs_up_gesture",
+        "frame": 4100,
+        "animation": "character_thumbs_up",
+        "duration_frames": 100,
+        "emotion": "satisfied"
+      }
+    ],
+    "voiceover": {
+      "text": "Step Six: Setting Down Properly. This is just as important as lifting. Approach your storage location or cleaning station, position your feet correctly, and reverse the lifting process. Bend at your knees and hips, keeping your back straight. Lower the bucket slowly and carefully. Never drop or throw the bucket, no matter how tired you are. A safe set-down completes a safe lift and protects your back.",
+      "start_frame": 3720,
+      "duration_frames": 480,
+      "audio_file": "voiceover_scene_7.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "gentle_lowering",
+        "frame": 3760,
+        "duration_frames": 400,
+        "volume": 0.4
+      },
+      {
+        "type": "completion_chime",
+        "frame": 4050,
+        "duration_frames": 50,
+        "volume": 0.8
+      }
+    ],
+    "background_music": {
+      "type": "calm_satisfied_theme",
+      "volume": 0.40,
+      "start_frame": 3720,
+      "end_frame": 4200
+    }
+  },
+
+  {
+    "scene_id": 8,
+    "scene_name": "Conclusion",
+    "start_frame": 4200,
+    "end_frame": 4320,
+    "duration_seconds": 5,
+    "background_color": "#F5F5F5",
+    "elements": [
+      {
+        "type": "character",
+        "name": "main_cleaner",
+        "position": {"x": 960, "y": 500},
+        "animation": "thumbs_up_confident",
+        "duration_frames": 120,
+        "expression": "proud_smile"
+      },
+      {
+        "type": "visual_effect",
+        "name": "icon_circle_arrangement",
+        "position": {"x": 960, "y": 500},
+        "animation": "arrange_icons_in_circle",
+        "icons": ["hard_hat", "safety_vest", "goggles", "gloves", "boots", "warning_triangle", "first_aid_kit"],
+        "radius": 300,
+        "duration_frames": 100,
+        "start_frame": 4250
+      },
+      {
+        "type": "visual_effect",
+        "name": "equipment_glow",
+        "animation": "glow_all_safety_items",
+        "glow_color": "#FFD700",
+        "glow_intensity": 0.7,
+        "duration_frames": 80,
+        "start_frame": 4280
+      },
+      {
+        "type": "text_callout",
+        "text": "REMEMBER: Your Health Matters",
+        "position": {"x": 960, "y": 700},
+        "font": "Arial Bold",
+        "font_size": 48,
+        "color": "#000000",
+        "background_box": true,
+        "animation": "slide_in",
+        "duration_frames": 120,
+        "start_frame": 4200
+      },
+      {
+        "type": "text_callout",
+        "text": "Follow these 6 steps every time",
+        "position": {"x": 960, "y": 800},
+        "font": "Arial",
+        "font_size": 40,
+        "color": "#333333",
+        "background_box": true,
+        "animation": "fade_in",
+        "duration_frames": 80,
+        "start_frame": 4240
+      },
+      {
+        "type": "text_callout",
+        "text": "Safe Handling = Injury Prevention",
+        "position": {"x": 960, "y": 900},
+        "font": "Arial Bold",
+        "font_size": 40,
+        "color": "#00AA00",
+        "background_box": true,
+        "animation": "fade_in",
+        "duration_frames": 80,
+        "start_frame": 4280
+      },
+      {
+        "type": "fade_out",
+        "duration_frames": 60,
+        "target_opacity": 0.0,
+        "start_frame": 4260
+      }
+    ],
+    "voiceover": {
+      "text": "Remember: Your health and safety matter. Follow these six steps every single time you lift and carry at work. If something feels too heavy, awkward, or uncomfortable, ask for help. Safe manual handling prevents serious back injuries that can affect your quality of life and career. Be smart. Be safe. Protect your back.",
+      "start_frame": 4200,
+      "duration_frames": 120,
+      "audio_file": "voiceover_scene_8.mp3"
+    },
+    "sound_effects": [
+      {
+        "type": "success_fanfare",
+        "frame": 4280,
+        "duration_frames": 80,
+        "volume": 0.9
+      }
+    ],
+    "background_music": {
+      "type": "uplifting_inspiring_theme",
+      "volume": 0.50,
+      "start_frame": 4200,
+      "end_frame": 4320,
+      "fade_out_frames": 40
+    }
+  }
+]

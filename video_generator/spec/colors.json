@@ -1,0 +1,24 @@
+{
+  "colors": {
+    "safety_yellow": "#FFD700",
+    "safety_green": "#00AA00",
+    "danger_red": "#FF4444",
+    "bright_blue": "#0088FF",
+    "accent_orange": "#FF8800",
+    "background_primary": "#F5F5F5",
+    "background_gradient_bottom": "#E0E8FF",
+    "text_dark": "#333333",
+    "text_black": "#000000",
+    "skin_tone": "#D4A574",
+    "hair_color": "#4A2C1A",
+    "white": "#FFFFFF",
+    "light_grey": "#D3D3D3",
+    "dark_grey": "#2C2C2C",
+    "dark_navy": "#2C3E50",
+    "light_blue": "#87CEEB",
+    "tan": "#D2B48C",
+    "eye_iris": "#0088FF",
+    "eye_pupil": "#000000",
+    "eye_white": "#FFFFFF"
+  }
+}
