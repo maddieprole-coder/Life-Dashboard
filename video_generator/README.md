@@ -27,10 +27,12 @@ to a drawing function using that element's own position/colour/timing
 fields. Nothing about scene content is hardcoded outside the JSON.
 
 The character is a procedural capsule/circle rig (`character.py`) rather
-than hand-drawn artwork — this matches the character spec's own
-requirement of "simple geometric proportions... simplified, not
-anatomically detailed" cartoon shapes, using its exact colours and part
-dimensions.
+than hand-drawn artwork — simple geometric shapes, styled to match a
+reference mascot image the project owner supplied: brown ponytail, white
+t-shirt under blue denim overalls, yellow rubber gloves and sneakers, and
+a broom/wheeled cleaning cart as props (`objects.py`). It no longer uses
+the original spec text's hard hat / hi-vis vest outfit, per that later
+direction.
 
 ## Running it
 

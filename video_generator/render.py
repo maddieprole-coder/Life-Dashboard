@@ -62,14 +62,25 @@ def draw_background(canvas, scene):
 
 # ---------------------------------------------------------------- elements
 
+# The reference mascot always carries a broom in its idle hand. We keep that
+# only for scenes where both hands aren't already busy with the bucket/lift
+# mechanic, so the broom doesn't collide with the lifting demonstration.
+BROOM_ANIMATIONS = {"wave_friendly", "assess_load", "position_feet"}
+
+
 def draw_character_element(canvas, element, scene, frame):
     start, duration = _elem_window(element, scene)
     local = frame - start
-    pose = animations.get_pose(element.get("animation"), local, duration, element)
+    anim_name = element.get("animation")
+    pose = animations.get_pose(anim_name, local, duration, element)
     character.draw_character(canvas, pose)
     if element.get("bucket_held"):
         rel = element.get("bucket_position_relative", {"x": 0, "y": -60})
         objects.draw_mop_bucket(canvas, pose["x"] + rel["x"], pose["y"] + rel["y"], scale=0.7)
+    if anim_name in BROOM_ANIMATIONS:
+        scale = pose.get("scale", 1.0)
+        hx, hy = character.hand_point(pose, "left")
+        objects.draw_broom(canvas, hx, hy, angle=-15 * pose.get("facing", 1), scale=scale)
 
 
 def draw_object_element(canvas, element, scene, frame):

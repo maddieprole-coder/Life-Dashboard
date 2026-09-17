@@ -77,7 +77,7 @@ def pose_walk_with_bucket(frame, duration, x0, y0, x1, y1, **_):
     left = sine_cycle(cycle) * 20
     right = -sine_cycle(cycle) * 20
     return default_pose(x=x, y=y0, left_leg_rotation=left, right_leg_rotation=right,
-                         gloves=True, expression="focused")
+                         expression="focused")
 
 
 def pose_bend_and_set_down(frame, duration, x, y, **_):
@@ -87,7 +87,7 @@ def pose_bend_and_set_down(frame, duration, x, y, **_):
     crouch = lerp(0.0, 0.55, e) if t < 0.75 else lerp(0.55, 0.0, (t - 0.75) / 0.25)
     return default_pose(x=x, y=y, crouch=crouch,
                          left_leg_rotation=crouch * 80, right_leg_rotation=crouch * 80,
-                         gloves=True, expression="careful")
+                         expression="careful")
 
 
 def pose_thumbs_up_confident(frame, duration, x, y, **_):
