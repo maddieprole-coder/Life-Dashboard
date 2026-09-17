@@ -100,7 +100,11 @@ def draw_object_element(canvas, element, scene, frame):
         e = ease_out(t) if anim == "lift_smooth" else ease_in(t)
         x = lerp(pos["x"], end["x"], e)
         y = lerp(pos["y"], end["y"], e)
-        objects.draw_mop_bucket(canvas, x, y)
+        # The spec's end_position sits at face height on this character's
+        # proportions; bias the held height down so it reads as "close to
+        # the chest" per the voiceover, instead of colliding with the face.
+        y += 100 * e
+        objects.draw_mop_bucket(canvas, x, y, scale=0.8)
         if anim == "lift_smooth" and element.get("arrow_indicators") and t < 1:
             draw = ImageDraw.Draw(canvas, "RGBA")
             c = hex_to_rgb(element.get("arrow_color", "#00AA00"))
